@@ -11,9 +11,15 @@
           <div class="hidden lg:ml-6 lg:block">
             <div class="flex space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/aboutus" class="rounded-md px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-700 hover:text-white">About Us</a>
-              <a href="/locations" class="rounded-md px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-700 hover:text-white">Locations</a>
-              <a href="/events" class="rounded-md px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-700 hover:text-white">Events</a>
+              <%= link_to aboutus_path do %>
+                <p class="rounded-md px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-700 hover:text-white">About Us</p>
+              <% end %>
+              <%= link_to locations_path do %>
+                <p class="rounded-md px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-700 hover:text-white">Locations</p>
+              <% end %>
+              <%= link_to events_path do %>
+                <p class="rounded-md px-3 py-2 text-sm font-medium text-gray-500 hover:bg-gray-700 hover:text-white">Events</p>
+              <% end %>
             </div>
           </div>
         </div>
