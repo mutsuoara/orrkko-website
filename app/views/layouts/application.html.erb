@@ -10,7 +10,7 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
+    <%= favicon_link_tag asset_path('static-site-images/ryueiryu-favicon.ico') %>
   <body>
       <%= render "layouts/header" %>
       <%= yield %>
