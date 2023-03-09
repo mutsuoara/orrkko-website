@@ -1,0 +1,33 @@
+// custom css for named class
+.page-title {
+    font-weight: bold; 
+    font-size: xx-large;
+    margin-left: 50%;
+    // font-family: Arial, Helvetica, sans-serif;
+}
+.events-page {
+    margin-left: 100px;
+}
+
+.hr-line {
+    margin-left: -100px;
+    margin-top: 40px;
+    border: none;
+    height: 2px;
+    color: lightgray;
+    background-color: lightgray;
+}
+
+// custom id css
+#website-link {
+    a:active {
+        color:blue($color: #000000)
+    }
+    a:visited {
+        color: rgba(255, 10, 255, 0.356);
+      }
+    text-underline-position: under;
+    color: #0000EE;
+    text-decoration: underline;
+}
+

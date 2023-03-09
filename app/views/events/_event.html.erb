@@ -1,0 +1,40 @@
+<div id="<%= dom_id event %>" class="events-page">
+  <p class="my-1">
+    <strong class="block font-medium mb-1">Date:</strong>
+    <%= event.date %>
+  </p>
+
+  <p class="my-1">
+    <strong class="block font-medium mb-1">Time:</strong>
+    <%= event.time %>
+  </p>
+
+  <p class="my-1">
+    <strong class="block font-medium mb-1">Name:</strong>
+    <%= event.name %>
+  </p>
+<!-- need to create an if statement here to eensure that a $ is present in the string, otherwise you add it here.-->
+  <p class="my-1">
+    <strong class="block font-medium mb-1">Cost:</strong>
+    <%= event.cost %>
+  </p>
+
+  <p class="my-1">
+    <strong class="block font-medium mb-1">Location:</strong>
+    <%= event.location %>
+  </p>
+
+  <p class="my-1" id="event-link">
+    <strong class="block font-medium mb-1">Website:</strong>
+    <div id="website-link" >
+      <%= link_to event.website, "https://#{event.website}", :target => "_blank" %>
+    </div>
+  </p>
+  <br>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this event", event, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this event', edit_event_path(event), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+  <% end %>
+  <hr class="hr-line">
+</div>
