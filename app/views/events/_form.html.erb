@@ -11,32 +11,27 @@
     </div>
   <% end %>
 
-  <div class="my-5">
-    <%= form.label :date %>
-    <%= form.date_field :date, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="my-8 relative mt-2 rounded-md shadow-sm">
+    <%= form.text_field :name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", placeholder: "Event Name" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :time %>
-    <%= form.time_field :time, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="my-8 relative mt-2 rounded-md shadow-sm">
+    <%= form.date_field :date, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", placeholder: "Date of Event" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="my-8 relative mt-2 rounded-md shadow-sm">
+    <%= form.time_field :time, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", placeholder: "Start Time" %>
+  </div>
+  
+  <div class="my-8 relative mt-2 rounded-md shadow-sm">
+    <%= form.number_field :cost, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", placeholder: "Cost" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :cost %>
-    <%= form.number_field :cost, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
+  <div class="my-8 relative mt-2 rounded-md shadow-sm">
+    <%= form.text_field :location, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", placeholder: "location" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :location %>
-    <%= form.text_field :location, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
-  </div>
-
-  <div class="my-8">
+  <div class="my-8" id="event-listing">
     <div class="relative mt-2 rounded-md shadow-sm">     
       <%= form.text_field :website, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full", placeholder: "www.example.com" %>
     </div>
