@@ -15,6 +15,15 @@ export default class extends Controller {
     });
   }
 
+//need to figure out how to close the drop down menu when you click outside of the menu itself.
+
+  // closeDropDown(event) {
+  //   const dropDownClicked = document.getElementById('drop-down-menu').contains(event.target);
+
+  //   if (!dropDownClicked && event.target.id !== 'menu-dropdown-items') {
+  //     leave(document.getElementById('menu-dropdown-items'));
+  //   }
+  // }
     // closeUserMenu(element) {
     //   const userMenuClicked = document.getElementById('openUserMenu').contains(element.target);
 
